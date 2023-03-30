@@ -1,0 +1,23 @@
+<mat-card>
+    <mat-card-header>
+        <h2>ADD CATEGORY</h2>
+    </mat-card-header>
+    <mat-card-content>
+        <form class="example-form" [formGroup]="categoryform">
+            <form class="example-form">
+                <mat-form-field class="example-full-width">
+                  <mat-label>Title</mat-label>
+                  <input matInput formControlName="title">
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Description</mat-label>
+                    <textarea rows="5" matInput formControlName="description"></textarea>
+                </mat-form-field>
+                  <div>
+                    <button (click)="proceedaddcategory()" type="button" mat-raised-button color="primary">Submit</button>
+                  </div>
+              </form>  
+          </form>
+    </mat-card-content>
+</mat-card>
+

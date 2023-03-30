@@ -1,0 +1,24 @@
+<mat-card>
+    <mat-card-header>
+        <h2>ĐĂNG NHẬP</h2>
+    </mat-card-header>
+    <mat-card-content>
+        <form class="example-form" [formGroup]="loginform">
+            <form class="example-form">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Email</mat-label>
+                    <input matInput formControlName="username">
+                  </mat-form-field>
+                  <mat-form-field class="example-full-width">
+                    <mat-label>Password</mat-label>
+                    <input type="password" matInput formControlName="password">
+                  </mat-form-field>
+                  <div>
+                    <button (click)="proceedlogin()" type="button" mat-raised-button color="primary">Submit</button>
+                    <a routerLink="/register" mat-raised-button color="accent">Go to Register</a>
+                  </div>
+              </form>  
+          </form>
+    </mat-card-content>
+  </mat-card>
+

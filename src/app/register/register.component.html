@@ -1,0 +1,36 @@
+<mat-card>
+    <mat-card-header>
+        <h2>ĐĂNG KÝ TÀI KHOẢN</h2>
+    </mat-card-header>
+    <mat-card-content>
+        <form class="example-form" [formGroup]="registerform">
+            <form class="example-form">
+                <mat-form-field class="example-full-width">
+                  <mat-label>FirstName</mat-label>
+                  <input matInput formControlName="firstname">
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <mat-label>LastName</mat-label>
+                    <input matInput formControlName="lastname">
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Email</mat-label>
+                    <input matInput formControlName="email">
+                  </mat-form-field>
+                  <mat-form-field class="example-full-width">
+                    <mat-label>Password</mat-label>
+                    <input type="password" matInput formControlName="password">
+                  </mat-form-field>
+                  <mat-form-field class="example-full-width">
+                    <mat-label>Confirm Password</mat-label>
+                    <input type="password" matInput formControlName="confirmpassword">
+                  </mat-form-field>
+                  <div>
+                    <button (click)="proceedregister()" type="button" mat-raised-button color="primary">Submit</button>
+                    <a routerLink="/login" mat-raised-button color="accent">Back to Login</a>
+                  </div>
+              </form>  
+          </form>
+    </mat-card-content>
+  </mat-card>
+
